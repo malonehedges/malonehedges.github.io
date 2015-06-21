@@ -4,6 +4,7 @@ var ghpages = require('gh-pages');
 var runSequence = require('gulp-run-sequence');
 var bower = require('gulp-bower');
 var shell = require('gulp-shell');
+var clean = require('gulp-clean');
 var revision = require('git-rev');
 
 // Default Task - set to fail to avoid accidental publishing
@@ -16,6 +17,11 @@ gulp.task('default', function() {
 
 gulp.task('bower', function() {
   return bower();
+});
+
+gulp.task('clean', function() {
+  gulp.src(['.build', 'static/vendor'], { read: false })
+    .pipe(clean());
 });
 
 gulp.task('cactus', shell.task([
@@ -37,5 +43,5 @@ gulp.task('github', function(cb) {
 // Main Task
 
 gulp.task('deploy', function(cb) {
-  runSequence('bower', 'cactus', 'github', cb);
+  runSequence('clean', 'bower', 'cactus', 'github', cb);
 });
