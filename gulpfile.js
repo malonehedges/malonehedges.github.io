@@ -25,9 +25,11 @@ gulp.task('cactus', shell.task([
 
 gulp.task('github', function(cb) {
   revision.short(function (rev) {
-    gulp.src('./.build/**/*')
+    gulp.src('.build/**/*', { base: '.build' })
       .pipe(ghPages({
-        branch: 'master'
+        branch: 'master',
+        message: 'Updated to ' + rev + '.',
+        force: true
       })
     );
 

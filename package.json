@@ -1,21 +1,6 @@
 {
   "name": "malonehedges.github.io",
   "version": "1.0.0",
-  "description": "This is my personal website.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/malonehedges/malonehedges.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/malonehedges/malonehedges.github.io/issues"
-  },
-  "homepage": "https://github.com/malonehedges/malonehedges.github.io#readme",
   "devDependencies": {
     "git-rev": "^0.2.1",
     "gulp": "^3.9.0",
