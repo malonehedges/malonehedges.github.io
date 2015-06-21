@@ -1,5 +1,6 @@
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
+var path = require('path');
+var ghpages = require('gh-pages');
 var runSequence = require('gulp-run-sequence');
 var bower = require('gulp-bower');
 var shell = require('gulp-shell');
@@ -25,15 +26,11 @@ gulp.task('cactus', shell.task([
 
 gulp.task('github', function(cb) {
   revision.short(function (rev) {
-    gulp.src('.build/**/*', { base: '.build' })
-      .pipe(ghPages({
-        branch: 'master',
-        message: 'Updated to ' + rev + '.',
-        force: true
-      })
-    );
-
-    cb();
+    ghpages.publish(path.join(__dirname, '.build'), {
+      branch: 'master',
+      tag: 'update-' + rev,
+      message: 'Updated to ' + rev + '.'
+    }, cb);
   });
 });
 
