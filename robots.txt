@@ -1,4 +1,5 @@
+# www.robotstxt.org
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: sitemap.xml
