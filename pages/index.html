@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+
+	<!-- Image -->
+	<div class="card-left">
+  	<img src="{% static 'images/me.jpg' %}" alt="A picture of the site owner.">
+  </div>
+
+  <!-- Name and Info -->
+  <div class="card-right">
+  	<div class="card-right-heading">
+  		<h1>MALONE HEDGES</h1>
+  	</div>
+
+  	<div class="card-right-content">
+	  	<ul class="card-service-list">
+	  		<li><a href='https://www.facebook.com/MaloneHedges'>           facebook      </a></li>
+	  		<li><a href='https://twitter.com/malonehedges'>                twitter       </a></li>
+	  		<li><a href='https://instagram.com/_maloneh/'>                 instagram     </a></li>
+	  		<li><a href='http://remmal.vsco.co/grid/1'>                    vsco          </a></li>
+	  		<li><a href='https://open.spotify.com/user/1250105851'>        spotify       </a></li>
+	  		<li><a href='http://www.last.fm/user/xrm8'>                    last.fm       </a></li>
+	  		<li><a href='https://soundcloud.com/remmal'>                   soundcloud    </a></li>
+	  	</ul>
+  	</div>
+
+  	<div class="card-right-footer">
+  	</div>
+  </div>
+
+</div>
+{% endblock content %}

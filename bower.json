@@ -1,0 +1,6 @@
+{
+  "name": "malone-hedges",
+  "dependencies": {
+    "primer-css": "~2.2.1"
+  }
+}
