@@ -1,6 +1,10 @@
 {
   "name": "malone-hedges",
   "dependencies": {
-    "primer-css": "~2.2.1"
+    "primer-css": "~2.2.1",
+    "cheet.js": "~0.3.3",
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4",
+    "bounce.js": "~0.8.2"
   }
 }
