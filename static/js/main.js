@@ -7,4 +7,8 @@
     }), 1000);
   });
 
+  cheet('l u l u', function() {
+    return $('.card-image').attr('src', '/static/images/lulu.jpg');
+  });
+
 }).call(this);
