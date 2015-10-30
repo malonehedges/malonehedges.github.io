@@ -1,9 +1,9 @@
 # malone.io
 
-This is my personal website.
+This is the source code for my personal website, [malone.io](https://malone.io).
 
-I am using [Cactus](https://github.com/koenbok/Cactus/) as my static site generator.
+I am currently using [Cactus](https://github.com/koenbok/Cactus/) as my static site generator.
 
-Source is located on the `source` branch, while the live site is located on the `master` branch.
+The source code is located on the `source` branch, while the generated site is located on the `master` branch.
 
-Happy coding! :space_invader:
+:boom:
