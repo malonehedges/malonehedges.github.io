@@ -1,6 +1,7 @@
 {
   "name": "malone.io",
   "devDependencies": {
+    "roots": "^3.1.0",
     "surge": "^0.17.7"
   },
   "dependencies": {
