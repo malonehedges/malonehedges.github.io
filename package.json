@@ -17,7 +17,8 @@
   },
   "scripts": {
     "test": "echo \"No tests configured.\"",
-    "compile": "roots compile -e production",
+    "clean": "rm -rf ./public",
+    "compile": "npm run clean && roots compile -e production",
     "deploy": "npm run compile && surge --project ./public --domain malone.io"
   }
 }
