@@ -1,0 +1,20 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='The home page of Malone Hedges.')
+    meta(name='author', content= "Malone Hedges")
+
+    block pagetitle
+
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300')
+    != css()
+
+  body
+    include ./partials/_googletagmanager.jade
+
+    block content
+
+    != js()
