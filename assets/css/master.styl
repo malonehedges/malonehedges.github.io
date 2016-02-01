@@ -4,14 +4,24 @@
 @import '_base'
 @import '_typography'
 
-main.snazzy
+.snazzy
   position: absolute
   top: 50%
   transform: translateY(-50%)
 
   padding-left 5em
 
-  ul
-    list-style-type none
-    padding-left 2em
-    margin 0
+.social-links
+  list-style-type none
+  padding-left 2em
+  margin 0
+
+  animation fadein 300ms ease-out
+
+@keyframes fadein
+  from
+    opacity 0
+    transform translateY(2em)
+  to
+    opacity 1
+    transform translateY(0)
