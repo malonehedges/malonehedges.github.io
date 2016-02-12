@@ -14,3 +14,9 @@ module.exports =
   stylus:
     use: [rupture(), autoprefixer()]
     sourcemap: true
+
+  'coffee-script':
+    sourcemap: true
+
+  jade:
+    pretty: true
