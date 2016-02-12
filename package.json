@@ -1,15 +1,16 @@
 {
   "name": "malone.io",
   "devDependencies": {
-    "roots": "^3.1.0",
+    "roots": "^4.0.0",
     "surge": "^0.17.7"
   },
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
-    "coffee-script": "^1.0.0",
+    "coffee-script": "^1.10.0",
     "css-pipeline": "0.3.x",
     "jade": "^1.0.0",
     "js-pipeline": "0.2.x",
+    "jstransformer-coffee-script": "^1.0.0",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
     "rupture": "0.6.x",
@@ -18,7 +19,7 @@
   "scripts": {
     "test": "echo \"No tests configured.\"",
     "clean": "rm -rf ./public",
-    "compile": "npm run clean && roots compile -e production",
-    "deploy": "npm run compile && surge --project ./public --domain malone.io"
+    "compile": "npm run clean && ./node_modules/.bin/roots compile -e production",
+    "deploy": "npm run compile && ./node_modules/.bin/surge --project ./public --domain malone.io"
   }
 }
