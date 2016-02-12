@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-cd $(dirname $0)/..
+cd $(dirname $0)
 
 domain="malone.io"
-cmd="--project ./public --domain $domain"
+cmd="--project ../public --domain $domain"
 
 # Deploy
-./node_modules/.bin/surge $cmd
+./../node_modules/.bin/surge $cmd
