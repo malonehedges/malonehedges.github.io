@@ -5,7 +5,7 @@ node_js:
   - "5"
 deploy:
   provider: script
-  script: scripts/deploy.js
+  script: scripts/deploy
   on:
     branch: master
     node: '4'
