@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+cd $(dirname $0)/..
 
 domain="malone.io"
 cmd="--project ./public --domain $domain"
