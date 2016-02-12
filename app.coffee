@@ -4,7 +4,7 @@ js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
 
 module.exports =
-  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', '.travis.yml']
+  ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'scripts/**', '.travis.yml']
 
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee'),

@@ -17,12 +17,9 @@
     "stylus": "0.52.x"
   },
   "scripts": {
-    "test": "roots compile -e production",
-    "clean": "rm -rf ./public",
-    "compile": "npm run clean && ./node_modules/.bin/roots compile -e production",
-    "deploy": "npm run compile && ./node_modules/.bin/surge --project ./public --domain malone.io"
+    "test": "roots compile -e production"
   },
   "engines": {
-    "node": "5.0.0"
+    "node": "4.2.6"
   }
 }

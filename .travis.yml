@@ -3,5 +3,9 @@ node_js:
   - "stable"
   - "4"
   - "5"
-after_success:
-  - npm run deploy
+deploy:
+  provider: script
+  script: scripts/deploy.js
+  on:
+    branch: master
+    node: '4'
