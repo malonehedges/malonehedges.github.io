@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
 cd $(dirname $0)
 
+echo cur dir
+pwd
+
 domain="malone.io"
 cmd="--project ../public --domain $domain"
 
 # Deploy
-./../node_modules/.bin/surge $cmd
+echo current dir
+ls .
+echo up a dir
+ls ..
+echo node modules
+ls ../node_modules
+echo node bin stuff
+ls ../node_modules/.bin
+
+# ./../node_modules/.bin/surge $cmd
