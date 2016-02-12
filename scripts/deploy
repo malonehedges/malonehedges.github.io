@@ -4,4 +4,4 @@ domain="malone.io"
 cmd="--project ./public --domain $domain"
 
 # Deploy
-surge $cmd
+./node_modules/.bin/surge $cmd
