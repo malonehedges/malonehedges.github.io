@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+domain="malone.io"
+cmd="--project ./public --domain $domain"
+
+# Deploy
+surge $cmd
