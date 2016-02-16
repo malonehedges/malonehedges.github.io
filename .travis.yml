@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "stable"
-  - "4"
-  - "5"
+- stable
+- '4'
+- '5'
 after_success:
-  - npm run deploy
+- npm run deploy
+notifications:
+  slack:
+    secure: YBTj1wKRI87/In0TyFtfW1W0MmHMjcin0DuOhJWlATd904lrSkgvMZUm4J2zmKeYGP9IGMLGtQtvFOGX4ghAG0BMm7uKEe2dBhl3CTK8PQfx8+BQdqjFB1ft3kMU3keX5Rr37DW3C/NSrsr8BLwVna36y+5etT6SyIchTdZLIDpQSiXekrzR2jTIfE2NmUP7um2unavRQgEtkkyv/iGoFNgAHvxmZYxfIg4qKkZuRA/vOe03MP5Rytwkr9ae+EWP62bOrie2GkOv69uZK0AYXg3iyRKARQIyLv2YfYcNkRgDgBK02WC4KiQmHYoVZaN8XD5wa061xbugujfOf4dlcVylkZ0b3OfvV3VFob0oBCxKxJ47ZlWsldMpCRV6IAL5HmsNE7vJqH6AWbTA99Qfp94pdfnus5BPl6UM/aJGoVrZEfeAYY4EZ0uF5C5cRyLNhSAvhvVXo8/Png10B/p/+g1YAS2STQIRBmjtOPrp4ZCEzgc/k29/nzd0UaNsFLLY9RE1KtS2FOGtv205/cejIfQgsKpVa1E6aXlRy1sX3TptteKKhhrss1seIiElZtrAIX1XU5s57sbejX2U3TKwhDTyNmvkKUR0D5ABLBfwU9/1hfX66WtNxkm+5Rp6UOguHHqn76QCThYiPveHqKP4jmJgILKFvtXf9pCpujQi8Nc=
