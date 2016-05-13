@@ -18,7 +18,7 @@
     "test": "npm run compile",
     "compile": "npm run clean && ./node_modules/.bin/roots compile -e production",
     "clean": "rm -rf ./public",
-    "deploy": "npm run compile && ./node_modules/.bin/surge --project ./public --domain malone.io"
+    "deploy": "npm run compile && gsutil rsync -d -r public gs://malone.io"
   },
   "engines": {
     "node": "4.2.6"

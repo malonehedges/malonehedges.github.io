@@ -1,4 +1,4 @@
-# malone.io [![Build Status](https://travis-ci.com/malonehedges/malone.io.svg?token=smR2qpZyEPRNXW6FccdA&branch=master)](https://travis-ci.com/malonehedges/malone.io)
+# malone.io
 
 This is the code for my website.
 
@@ -21,7 +21,6 @@ npm run deploy
 ## Using
 
  * [roots](http://roots.cx/)
- * [surge.sh](https://surge.sh)
- * [Cloudflare](https://www.cloudflare.com)
+ * [Google Cloud Storage](https://cloud.google.com/storage/)
  * [Google Analytics](https://www.google.com/analytics/)
  * [Google Tag Manager](https://www.google.com/analytics/tag-manager/)
