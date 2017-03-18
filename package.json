@@ -15,6 +15,7 @@
     "stylus": "0.52.x"
   },
   "scripts": {
+    "dev": "roots watch",
     "test": "npm run compile",
     "compile": "npm run clean && ./node_modules/.bin/roots compile -e production",
     "clean": "rm -rf ./public",
