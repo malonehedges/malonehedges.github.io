@@ -7,7 +7,7 @@ This is the code for my website.
 We are using [roots](http://roots.cx/) for our build system. For efficient development, use the following command:
 
 ```bash
-roots watch
+yarn dev
 ```
 
 ## Deploy
@@ -15,7 +15,7 @@ roots watch
 To deploy, just run this command in the command prompt:
 
 ```bash
-npm run deploy
+yarn deploy
 ```
 
 ## Using
