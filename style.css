@@ -1,0 +1,64 @@
+/*
+Background: #cbecff
+Font: #041a2a
+Emphasis: #0e5388
+*/
+
+html {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2vmin;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #cbecff;
+  color: #041a2a;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0e5388;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-block {
+  padding: 3vmin 0;
+}
+
+h1 {
+  font-size: 7.4rem;
+  font-weight: 700;
+  color: #0e5388;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+}
