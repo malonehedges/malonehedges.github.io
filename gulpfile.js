@@ -12,7 +12,7 @@ gulp.task('default', function () {
 })
 
 gulp.task('build', function () {
-  gulp.src(['src/**/*'])
+  return gulp.src(['src/**/*'])
     .pipe(minify({
       minify: true,
       collapseWhitespace: true,
