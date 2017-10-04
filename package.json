@@ -1,0 +1,16 @@
+{
+  "name": "004-field-photo-signature",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gh-pages": "^0.3.1",
+    "git-rev": "^0.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-minifier": "^0.2.2",
+    "run-sequence": "^2.2.0"
+  }
+}

@@ -1,0 +1,102 @@
+html {
+  font: 18px 'Vulf Mono Italic';
+  line-height: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Vulf Mono Italic';
+  src: url('fonts/Vulf_Mono-Italic_web.woff');
+  src: url('fonts/Vulf_Mono-Italic_web.woff') format('woff'),
+       url('fonts/Vulf_Mono-Italic_web.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-aspect-ratio: 7/5) {
+  body {
+    background-image: url('assets/field.jpg');
+  }
+}
+
+@media screen and (min-aspect-ratio: 7/5) {
+  body {
+    background-image: url('assets/field-extended.jpg');
+  }
+}
+
+
+@media screen and (min-aspect-ratio: 19/10), (max-height: 390px) {
+  body {
+    color: #fff !important;
+    background-image: url('assets/leaves.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .signature {
+    background-image: url('assets/signature-white.png') !important;
+  }
+
+  a:link {color: #fff !important; text-decoration: none !important;}
+  a:visited {color: #fff !important; text-decoration: none !important;}
+}
+
+body {
+  background-color: #222834;
+  color: #222834;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+a:link {color: #222834; text-decoration: none;}
+a:visited {color: #222834; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+main {
+  height: 100%;
+  position: fixed;
+  top: 8vh;
+  left: 8vw;
+  animation: fadein 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.block {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.signature {
+  background-image: url('assets/signature-blue.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+}
