@@ -8,6 +8,8 @@ const ghpages = require('gh-pages')
 const runSequence = require('run-sequence')
 const revision = require('git-rev')
 const minify = require('gulp-minifier')
+const replace = require('gulp-replace')
+const revSync = require('git-rev-sync')
 
 // Default Task - set to fail to avoid accidental publishing
 gulp.task('default', () => {
@@ -23,6 +25,7 @@ gulp.task('build-css', () => {
 
 gulp.task('build', ['build-css'], () => {
   return gulp.src(['src/**/!(*.css)'])
+    .pipe(replace('GIT_REV_HASH', revSync.short()))
     .pipe(minify({
       minify: true,
       collapseWhitespace: true,
