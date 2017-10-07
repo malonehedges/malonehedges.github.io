@@ -16,6 +16,11 @@ gulp.task('default', () => {
   console.log('Use gulp deploy to deploy to master.')
 })
 
+gulp.task('build-assets', () => {
+  return gulp.src(['public/**/*'])
+    .pipe(gulp.dest('build'))
+})
+
 gulp.task('build-css', () => {
   return gulp.src(['src/**/*.css'])
     .pipe(autoprefixer(['> 5%']))
@@ -23,8 +28,8 @@ gulp.task('build-css', () => {
     .pipe(gulp.dest('build'))
 })
 
-gulp.task('build', ['build-css'], () => {
-  return gulp.src(['src/**/!(*.css)'])
+gulp.task('build-html', () => {
+  return gulp.src(['src/**/*.html'])
     .pipe(replace('GIT_REV_HASH', revSync.short()))
     .pipe(minify({
       minify: true,
@@ -34,6 +39,8 @@ gulp.task('build', ['build-css'], () => {
     }))
     .pipe(gulp.dest('build'))
 })
+
+gulp.task('build', ['build-assets', 'build-css', 'build-html'])
 
 gulp.task('clean', () => {
   return del(['build'])
