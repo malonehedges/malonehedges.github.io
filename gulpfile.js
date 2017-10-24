@@ -58,6 +58,7 @@ gulp.task('github', (cb) => {
 gulp.task('dev', () => {
   browserSync.init({
     server: './src',
+    serveStatic: ['./public'],
   })
 
   gulp.watch("src/**/*").on('change', browserSync.reload)
