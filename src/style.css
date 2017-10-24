@@ -29,6 +29,12 @@ html {
   }
 }
 
+@media only screen and (inverted-colors) {
+  html {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+}
 
 @media screen and (min-aspect-ratio: 19/10), (max-height: 390px) {
   body {
