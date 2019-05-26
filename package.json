@@ -2,6 +2,12 @@
   "name": "004-field-photo-signature",
   "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "clean": "gulp clean"
+  },
+  "resolutions": {
+    "natives": "1.1.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
